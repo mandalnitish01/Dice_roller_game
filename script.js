@@ -11,7 +11,7 @@ function diceRoller() {
     const value = Math.floor(Math.random() * 6) + 1;
     values.push(value);
     images.push(
-      `<img src="diceimages/${value}.png" alt = "Dice ${value}">`
+      `<img style="width=80px" height ="80px" padding = "0 15px"  src="diceimages/${value}.png" alt = "Dice ${value}">`
     );
   }
   Diceresult.textContent = `dice: ${values.join(`, `)}`;
